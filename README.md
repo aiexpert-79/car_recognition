@@ -1,9 +1,9 @@
 # VEHICLE DETECTION, TRACKING AND COUNTING
-This sample project focuses on "Vechicle Detection, Tracking and Counting" using [**TensorFlow Object Counting API**](https://github.com/ahmetozlu/tensorflow_object_counting_api). ***Please contact if you need professional vehicle detection & tracking & counting project with the super high accuracy!***
+This sample project focuses on "Vechicle Detection, Tracking and Counting" using [**TensorFlow Object Counting API**](https://github.com/aiexpert-79/car_recognition). ***Please contact if you need professional vehicle detection & tracking & counting project with the super high accuracy!***
 
 ---
 
-***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api).***
+***The [TensorFlow Object Counting API](https://github.com/aiexpert-79/car_recognition) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/aiexpert-79/car_recognition).***
 
 ---
 
@@ -26,8 +26,8 @@ This sample project has more than just counting vehicles, here are the additiona
 - Detection of vehicle direction of travel
 - Prediction the speed of the vehicle
 - Prediction of approximate vehicle size
-- **The images of detected vehicles are cropped from video frame and they are saved as new images under "[detected_vehicles](https://github.com/ahmetozlu/vehicle_counting_tensorflow/tree/master/detected_vehicles)" folder path**
-- **The program gives a .csv file as an output ([traffic_measurement.csv](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/traffic_measurement.csv)) which includes "Vehicle Type/Size", " Vehicle Color", " Vehicle Movement Direction", " Vehicle Speed (km/h)" rows, after the end of the process for the source video file.**
+- **The images of detected vehicles are cropped from video frame and they are saved as new images under "[detected_vehicles](https://github.com/aiexpert-79/car_recognition/tree/master/detected_vehicles)" folder path**
+- **The program gives a .csv file as an output ([traffic_measurement.csv](https://github.com/aiexpert-79/car_recognition/blob/master/traffic_measurement.csv)) which includes "Vehicle Type/Size", " Vehicle Color", " Vehicle Movement Direction", " Vehicle Speed (km/h)" rows, after the end of the process for the source video file.**
 
 ToDos:
 
@@ -36,7 +36,7 @@ ToDos:
 - Code cleanup will be performed.
 - UI will be developed. 
 
-The input video can be accessible by this [link](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/input_video.mp4).
+The input video can be accessible by this [link](https://github.com/aiexpert-79/car_recognition/blob/master/input_video.mp4).
 
 ## Theory
 
@@ -46,9 +46,9 @@ The input video can be accessible by this [link](https://github.com/ahmetozlu/ve
   <img src="https://user-images.githubusercontent.com/22610163/103478400-80414280-4dd7-11eb-9874-3735359e2c20.png">
 </p>
 
-- Vehicle detection and classification have been developed using TensorFlow Object Detection API, [see](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/vehicle_detection_main.py) for more info.
-- Vehicle speed prediction has been developed using OpenCV via image pixel manipulation and calculation, [see](https://github.com/ahmetozlu/vehicle_counting_tensorflow/tree/master/utils/speed_and_direction_prediction_module) for more info.
-- Vehicle color prediction has been developed using OpenCV via K-Nearest Neighbors Machine Learning Classification Algorithm is Trained Color Histogram Features, [see](https://github.com/ahmetozlu/vehicle_counting_tensorflow/tree/master/utils/color_recognition_module) for more info.
+- Vehicle detection and classification have been developed using TensorFlow Object Detection API, [see](https://github.com/aiexpert-79/car_recognition/blob/master/vehicle_detection_main.py) for more info.
+- Vehicle speed prediction has been developed using OpenCV via image pixel manipulation and calculation, [see](https://github.com/aiexpert-79/car_recognition/tree/master/utils/speed_and_direction_prediction_module) for more info.
+- Vehicle color prediction has been developed using OpenCV via K-Nearest Neighbors Machine Learning Classification Algorithm is Trained Color Histogram Features, [see](https://github.com/aiexpert-79/car_recognition/tree/master/utils/color_recognition_module) for more info.
 
 [TensorFlow™](https://www.tensorflow.org/) is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them.
 
@@ -70,7 +70,7 @@ Source video is read frame by frame with OpenCV. Each frames is processed by ["S
 
 By default I use an ["SSD with Mobilenet" model](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2017_11_17) in this project. You can find more information about SSD in [here](https://towardsdatascience.com/understanding-ssd-multibox-real-time-object-detection-in-deep-learning-495ef744fab). See the [detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
 
-*The minimum vehicle detection threshold can be set [in this line](https://github.com/ahmetozlu/tensorflow_object_counting_api/blob/master/utils/visualization_utils.py#L443) in terms of percentage. The default minimum vehicle detecion threshold is 0.5!*
+*The minimum vehicle detection threshold can be set [in this line](https://github.com/aiexpert-79/car_recognition/blob/master/utils/visualization_utils.py#L443) in terms of percentage. The default minimum vehicle detecion threshold is 0.5!*
 
 ## Project Demo
 
@@ -105,7 +105,7 @@ Install TensorFlow by invoking one of the following commands:
     $ pip3 install tensorflow     # Python 3.n; CPU support (no GPU support)
     $ pip3 install tensorflow-gpu # Python 3.n; GPU support
 
-Current program is compatible with TensorFlow 1.5.0 version. Please uncomment these lines to run the program with TensorFlow 2.x: [#1](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/utils/label_map_util.py#L117), [#2](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/vehicle_detection_main.py#L77), [#3](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/vehicle_detection_main.py#L77), [#4](https://github.com/ahmetozlu/vehicle_counting_tensorflow/blob/master/vehicle_detection_main.py#L78).
+Current program is compatible with TensorFlow 1.5.0 version. Please uncomment these lines to run the program with TensorFlow 2.x: [#1](https://github.com/aiexpert-79/car_recognition/blob/master/utils/label_map_util.py#L117), [#2](https://github.com/aiexpert-79/car_recognition/blob/master/vehicle_detection_main.py#L77), [#3](https://github.com/aiexpert-79/car_recognition/blob/master/vehicle_detection_main.py#L77), [#4](https://github.com/aiexpert-79/car_recognition/blob/master/vehicle_detection_main.py#L78).
 
 **4.) TensorFlow Object Detection API**
 
@@ -131,14 +131,14 @@ After completing these 4 installation steps that are given at above, you can tes
 If you use this code for your publications, please cite it as:
 
     @ONLINE{vdtct,
-        author = "Ahmet Özlü",
+        author = "Honey Moharry",
         title  = "Vehicle Detection, Tracking and Counting by TensorFlow",
         year   = "2018",
-        url    = "https://github.com/ahmetozlu/vehicle_counting_tensorflow"
+        url    = "https://github.com/aiexpert-79/car_recognition"
     }
 
 ## Author
-Ahmet Özlü
+Honey Moharry
 
 ## License
 This system is available under the MIT license. See the LICENSE file for more info.

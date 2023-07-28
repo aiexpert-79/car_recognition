@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # ----------------------------------------------
-# --- Author         : Ahmet Ozlu
-# --- Mail           : ahmetozlu93@gmail.com
+# --- Author         : Honey Moharry
+# --- Mail           : hmh19980907@gmail.com
 # --- Date           : 31st December 2017 - new year eve :)
 # ----------------------------------------------
 

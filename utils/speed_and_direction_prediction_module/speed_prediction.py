@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # ----------------------------------------------
-# --- Author         : Ahmet Ozlu
-# --- Mail           : ahmetozlu93@gmail.com
+# --- Author         : Honey Moharry
+# --- Mail           : hmh19980907@gmail.com
 # --- Date           : 27th January 2018
 # ----------------------------------------------
 from utils.image_utils import image_saver
